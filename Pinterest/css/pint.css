@@ -1,0 +1,179 @@
+/* body{
+    background: #f2f2f2;
+}
+.container {
+    padding: 1em;
+    column-count: 4;
+
+}
+
+.img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media(max-width:800px){
+    .container{
+        column-count: 3;
+    }
+}
+
+@media(max-width:600px){
+    .container{
+        column-count: 2;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        column-count: 1;
+    }
+}
+
+.capa_1{
+    grid-row-end: span 3;
+}
+.capa_2{
+    grid-row-end: span 2;
+}
+.capa_3{
+    grid-row-end: span 1;
+} */
+*{
+ font-family: Helvetica ;
+ font-size: small;
+ font-weight: bold;
+
+}
+
+
+.container{
+padding-top: 100px;
+display: grid; 
+grid-template-columns: repeat(auto-fill,250px);
+grid-gap: 4px;
+justify-content: center;
+} 
+
+.cuadros{
+   border-radius: 5px;
+   padding:10px;
+   background: #f2f2f2;
+}
+
+.img {
+    
+    max-width: 100%;
+
+}
+
+.capa_1{
+    grid-row-end: span 3;
+}
+.capa_2{
+    grid-row-end: span 2;
+}
+.capa_3{
+    grid-row-end: span 1;
+}
+
+body .menu {
+    position: fixed;
+    top :0;
+    display: flex;
+    width: 100vw;
+    height: 90px;
+    background: #f2f2f2;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: 10px;
+    
+}
+.menu .pin .logo {
+    padding: 10px 10px;
+    width: 40px;
+    height: 40px;
+   }
+.menu.pin{
+    width: 100px;
+    height: 50px;
+    margin-left: 0px;
+}
+ .menu .home {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  background: #000000;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  color: azure;
+  
+ }
+ .menu .follo {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    background: #e4e2e2;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    
+   }
+.menu .buscar {
+    display: flex;
+    width: 750px;
+    height: 50px;
+    background: #e4e2e2;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: left;
+    padding: 0 0 2px 20px;
+    
+   }
+
+   .menu .campana {
+    display: flex;
+    margin-left: 20px;
+
+   }
+
+   .menu .texto {
+
+    display: flex;
+    margin-left: 20px;
+   }
+
+   .menu .usuario {
+
+    display: flex;
+    margin-left: 20px;
+    
+   }
+@media(max-width:414px){
+    .container{
+    }
+    body .menu .follo{
+        display :none;
+    }
+@media(max-width:414px){
+    .container{
+    }
+     body .menu .texto{
+        display :none;
+    }
+    
+}
+@media(max-width:414px){
+    .container{
+    }
+     body .menu .usuario{
+        display :none;
+    }
+    
+}
+}
